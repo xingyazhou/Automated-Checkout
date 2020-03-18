@@ -11,36 +11,7 @@ namespace Checkout
     {
         public static void Main(string[] args)
         {
-            // Toothpaste 1
-            // Cheese 2
-            // Bread 3
-            // Coffee 4
-            // Apples 5
-            // Flour 6
-            // Groud Beef 7
-            // Milk 8
-
-            // Test Case 1
-            //Console.WriteLine("Hello, world!");
-            AutoCheckout check = new AutoCheckout();
-
-            // buy three packs of toothpaste, special offer should be used
-            check.AddItem(1);
-            check.AddItem(1);
-            check.AddItem(1);
-            // buy two packs of coffee, special offer should be used
-            check.AddItem(4);
-            check.AddItem(4);
-            // buy 2.5kg Groud Beef
-            check.AddItem(7, 2.5);
-            // buy 2.7kg Apples, if other iterm > 150 kr, special offers should be used
-            check.AddItem(5, 2.7);
-
-            double s = check.Sum();
-            //Console.WriteLine("value = {0}", s);
-
-            // Assert.Equal(expected: 368.165, actual: s);
-
+            Console.WriteLine("Hello, world!");
         }
     }
 
