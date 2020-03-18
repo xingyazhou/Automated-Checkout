@@ -46,7 +46,10 @@ namespace Checkout
     public class AutoCheckout
     {
 
-        public Hashtable PRICETABLE = new Hashtable();
+        private Hashtable PRICETABLE = new Hashtable();
+        private Hashtable shoppinglist1 = new Hashtable();
+        private Hashtable shoppinglist2 = new Hashtable();
+
         public AutoCheckout()
         {
             PRICETABLE.Add(1, 24.95);
@@ -58,9 +61,6 @@ namespace Checkout
             PRICETABLE.Add(7, 93.00);
             PRICETABLE.Add(8, 9.32);
         }
-
-        public Hashtable shoppinglist1 = new Hashtable();
-        public Hashtable shoppinglist2 = new Hashtable();
 
         public double sum = 0;
         public void AddItem(int itemId)
